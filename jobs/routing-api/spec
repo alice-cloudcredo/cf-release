@@ -19,6 +19,12 @@ properties:
   routing-api.consul_ttl:
     description: "String representing ttl for consul locks. Units: ms, s, m h"
     default: "60s"
+  routing-api.debug_address:
+    description: "Address at which to serve debug info"
+    default: "0.0.0.0:17001"
+  routing-api.max_concurrent_etcd_requests:
+    description: "Maximum number of concurrent ETCD requests"
+    default: 10
   routing-api.lock_retry_interval:
     description: "String representing retry interval for consul locks. Units: ms, s, m h"
     default: "30s"
